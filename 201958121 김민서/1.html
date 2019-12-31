@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<head>
+      
+        <link rel="stylesheet" type="text/css" href="background.css"/>   
+        <link rel="stylesheet" type="text/css" href="join.css"/> 
+        <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap&subset=cyrillic" rel="stylesheet"> 
+        <script type="text/javascript" src="login.js"></script>   
+<title>너랑 나</title>
+<style>
+.mySlides {display:none;}
+table {border-collapse : collapse; border : 1px solid black;
+position : absolute;
+left : 875px;
+top : 550px;}
+td,th{text-align : center;
+padding : 5px;
+height : 15px;
+width : 100px;
+border : 1px dotted black;}
+
+thead ,tfoot, tbody{color : black;}
+
+tbody tr:hover {color : black;}
+</style>
+<script>
+        function over(obj){
+                obj.style.color = "purple";
+        }</script>
+</head>
+<body class ="html1">
+        <h1 class ='abc1'>아이유</h1>
+        <audio class ='fixed'controls autoplay > <source src="media/너랑 나.mp3" type="audio/mp3"> </audio>
+           <br>
+           
+                    <a href = "홈.html" class="decorated-button">
+                            <div class="button-text">Home</div>
+                            <div class="left-decoration"></div>
+                            <div class="right-decoration"></div>
+                    </a>
+                    <a href = "2.html" class="decorated-button">
+                            <div class="button-text">이현우</div>
+                            <div class="left-decoration"></div>
+                            <div class="right-decoration"></div>
+                    </a>
+                    <a href = "3.html" class="decorated-button">
+                            <div class="button-text">김이나</div>
+                            <div class="left-decoration"></div>
+                            <div class="right-decoration"></div>
+                    </a>
+                    <a href = "4.html" class="decorated-button">
+                            <div class="button-text">후속곡</div>
+                            <div class="left-decoration"></div>
+                            <div class="right-decoration"></div>
+                    </a>
+                    <br><br><br><br><br><br><br>
+                    
+                  <table>
+                        <caption>히트곡</caption>
+                        <thead>
+                                <tr><th>연도</th><th>월</th><th>제목</th></tr>
+                        </thead>
+                                <tbody>
+                                      
+                                        <tr onmouseover="over(this)"><td>2010년</td><td>6월</td><td >잔소리</td></tr>
+                                        <tr onmouseover="over(this)"><td>2010년</td><td>12월</td><td>좋은날</td></tr>
+                                        <tr onmouseover="over(this)"><td>2011년</td><td>11월</td><td>너랑나</td></tr>
+                                        <tr onmouseover="over(this)"><td>2012년</td><td>5월</td><td>하루끝</td></tr>
+                                        <tr onmouseover="over(this)"><td>2013년</td><td>10월</td><td>분홍신</td></tr>                                                
+                                </tbody>
+                </table>
+
+                <center><button class = "유애나" onclick="document.getElementById('id').style.display='block'" style="width:auto;"><b>유애나 가입</b></button></center>
+
+                <div id="id" class="modal">
+                  
+                  <form class="modal-content animate" action="join.html" method="blank">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="media/유애나.jpg" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="container">
+                      <label for="name"><b>이름</b></label>
+                      <input type="text" placeholder="홍길동" name="name" required>
+                        <br><br>
+                         <div class="container">
+                                <label for="telephone"><b>전화번호</b></label>
+                                        <input type="tel" placeholder="010-1234-5678" name="telephone" required>
+                          <br><br>
+                          <label for="psw"><b>나이</b></label>    
+                                <input type="radio" name = "age" id="age" value="adult">초등학생
+                        <input type="radio" name = "age" id="age" value="adult">중고등학생
+                        <input type="radio" name = "age" id="age" value="adult">성인
+                        <br><br>
+                      <label for="purpose"><b>아이유가 좋아하는 것은?</b></label>
+                        <input type="checkbox" id="purpose" value="palette" checked = "checked">팔레트
+                        <input type="checkbox" id="purpose"value="purple">보라색
+                        <input type="checkbox" id="purpose" value="bobbed hair">단발
+                        <br>
+                        
+                      <button id="유애나"><a><b>가입</b></a></button>
+                    </div>
+                
+                   
+                  </form>
+                </div>
+</body>
+</html>
